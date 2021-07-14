@@ -1,0 +1,40 @@
+value = 160
+if value < 100:
+    new_value = value / 2
+else: new_value = -value 
+print(new_value)
+################################
+value = 300
+if value < 100:
+    new_value = 1 
+else: new_value =  0
+print(new_value)
+################################
+value  = 160
+if value < 100:
+    new_value = True
+else: new_value = False
+print(new_value)
+################################
+my_str = "slOvo"
+my_str = my_str.upper()
+print(my_str)
+################################
+my_str = "slOvo"
+my_str = my_str.lower()
+print(my_str)
+################################
+my_str = "qwer"
+if len(my_str) < 5:
+    new_str = my_str * 2
+else:
+    new_str = my_str
+print(new_str)
+################################
+my_str = "qwer"
+if len(my_str) < 5:
+    end_my_str = my_str + my_str[::-1]
+else:
+    end_my_str = my_str
+print(end_my_str)
+################################
