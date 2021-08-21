@@ -1,0 +1,91 @@
+my_list = ["chen", "slardar", "beastmaster", "puck", "weaver"]
+new_list = []
+for index, symbol in enumerate(my_list):
+    if index % 2:
+        new_list.append(symbol[::-1])
+    else:
+        new_list.append(symbol)
+#####################################################################
+
+my_list = ["as", "da", "an", "love","defense", "of the", "ancients"]
+first_a_list = []
+for index, symbol in enumerate(my_list):
+    if symbol[0] == 'a':
+        first_a_list.append(symbol)
+
+#####################################################################
+
+my_list = ["as", "da", "an", "love","defense", "of the", "ancients"]
+a_list = []
+for index, value in enumerate(my_list):
+    if 'a' in value:
+        a_list.append(value)
+
+#####################################################################
+
+my_list = [1, 2, 3, "11", "22", 33]
+str_list = []
+for index, symbol in enumerate(my_list):
+    if isinstance(symbol, str):
+        str_list.append(symbol)
+
+#####################################################################
+
+my_str = "simpledimplepopitsqiush"
+my_list = []
+for index, symbol in enumerate(set(my_str)):
+    if my_str.count(symbol) == 1:
+        my_list.append(symbol)
+
+#####################################################################
+
+my_str = "simpledimplepopitsqiush"
+my_second_str = "qwertyuiopasdfghjkkzxcn"
+my_list = []
+my_list.append((set(my_str).intersection(set(my_second_str))))
+
+#####################################################################
+
+my_str = "simpledimplepopitsqiush"
+my_second_str = "qwertyuiopasdfghjkkzxcn"
+result = []
+
+my_list = list(set(my_str).intersection(set(my_second_str)))
+for index, symbol in enumerate(my_list):
+    if my_str.count(symbol) == 1 and my_second_str.count(symbol) == 1:
+        result.append(symbol)
+print(result)
+#####################################################################
+
+Matvey = {'Фамилия': 'Котух',
+        'Имя': 'Матвей',
+        'Возраст': 19,
+        'Проживание': {
+            'Страна': 'Украина',
+            'Город': 'Днепр',
+            'Улица': 'ул.Рабочая'
+        },
+        'Работа': {
+            'Наличие': False,
+        }}
+
+#####################################################################
+
+
+weight = 'г'
+maybe_cake = {'Составляющие': {'Коржи': {'Мука': f'300{weight}',
+                                        'Молоко': f'400{weight}',
+                                        'Масло': f'100{weight}',
+                                        'Яйцо': f'130{weight}'
+                                        },
+                              'Крем': {'Сахар': f'150{weight}',
+                                       'Масло': f'70{weight}',
+                                       'Ваниль': f'30{weight}',
+                                       'Сметана': f'400{weight}'
+                                       },
+                              'Глазурь': {'Какао': f'180{weight}',
+                                          'Сахар': f'50{weight}',
+                                          'Масло': f'40{weight}'
+                                          }
+                              }
+             }
